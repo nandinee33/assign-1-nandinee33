@@ -10,6 +10,7 @@ public class LinkedList1 {
     private Node last;
 
     public void addFirst(Person person) {
+        Node node = new Node(person);
 
     }
 
