@@ -60,6 +60,15 @@ public class LinkedList1 {
         }
         System.out.print("Enter your email address:");
         scanner.nextLine();
+        while (true) {
+            String temp = scanner.nextLine();
+            if (temp.matches("^[a-z]+[0-9]*@[a-z]+\\.[a-z]+$")) {
+                linkedList.add(temp);
+                break;
+            } else {
+                System.out.println("Invalid email address ! Enter again");
+            }
+        }
 
     }
 }
