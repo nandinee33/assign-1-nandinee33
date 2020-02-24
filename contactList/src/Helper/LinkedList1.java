@@ -8,7 +8,7 @@ public class LinkedList1 {
     Scanner scanner = new Scanner(System.in);
     LinkedList<String> linkedList = new LinkedList<>();
 
-    public void addContact(LinkedList1 linkedList1){
+    public void addContact(LinkedList1 linkedList1) {
 
         System.out.println("You have chosen to add a new contact: \n" +
                 "Please enter the name of the Person");
@@ -40,21 +40,12 @@ public class LinkedList1 {
                 break;
             }
         }
+        while (true) {
+            System.out.print("Would you like to add another contact number? (y/n):");
+            char choice = scanner.next().charAt(0);
 
 
+        }
     }
-
-    public void viewcontact(LinkedList1 linkedList1){
-
-    }
-
-    public void deleteContact(LinkedList1 linkedList1){
-
-    }
-
-    public void searchContact(LinkedList1 linkedList1){
-
-    }
-
-
 }
+
