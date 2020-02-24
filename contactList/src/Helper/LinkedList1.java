@@ -58,6 +58,9 @@ public class LinkedList1 {
                 break;
             }
         }
+        System.out.print("Enter your email address:");
+        scanner.nextLine();
+
     }
 }
 
