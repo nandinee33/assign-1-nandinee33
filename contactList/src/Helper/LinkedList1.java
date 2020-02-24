@@ -29,16 +29,20 @@ public class LinkedList1 {
             node.setNext(first);
             first = node;
         }
-
     }
 
     public boolean isEmpty() {
-        return true;
+        boolean response = false;
+        if (first == null) {
+            response = true;
+        }
+        return response;
     }
 
 
     public boolean exist(String firstName) {
-        return true;
+
+        return false;
     }
 
 
