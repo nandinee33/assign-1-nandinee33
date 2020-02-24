@@ -1,75 +1,86 @@
 package Helper;
 
-import java.util.LinkedList;
-import java.util.Scanner;
+import Node.Node;
+import Person.Person;
 
 public class LinkedList1 {
 
-    Scanner scanner = new Scanner(System.in);
-    LinkedList<String> linkedList = new LinkedList<>();
+    Person person;
+    private Node first;
+    private Node last;
 
-    public void addContact(LinkedList1 linkedList1) {
-
-        System.out.println("You have chosen to add a new contact: \n" +
-                "Please enter the name of the Person");
-        System.out.print("First Name: ");
-        String firstName = scanner.nextLine().trim();
-        while (true) {
-            if (firstName.matches("[A-Za-z]+")) {
-                break;
-            } else {
-                System.out.println("Please enter correct name");
-            }
-            firstName = scanner.nextLine().trim();
-        }
-        System.out.print("Last Name : ");
-        String lastName = scanner.nextLine().trim();
-        while (true) {
-            if (lastName.matches("[A-Za-z]+")) {
-                break;
-            } else {
-                System.out.println("Please enter correct name");
-            }
-            lastName = scanner.nextLine().trim();
-        }
-        System.out.print("Contact Number:");
-        while (true) {
-            String contact = scanner.nextLine().trim();
-            if (contact.matches("[0-9]{10}")) {
-                linkedList.add(contact);
-                break;
-            }
-        }
-        while (true) {
-            System.out.print("Would you like to add another contact number? (y/n):");
-            char choice = scanner.next().charAt(0);
-            if (choice == 'y') {
-                System.out.println("Conatct Number : ");
-                String contactNumber1 = scanner.nextLine().trim();
-                while (true) {
-                    if (contactNumber1.matches("[0-9]{10}")) {
-                        linkedList.add(contactNumber1);
-                        break;
-                    } else {
-                        System.out.println("Add correct number");
-                    }
-                }
-            } else {
-                break;
-            }
-        }
-        System.out.print("Enter your email address:");
-        scanner.nextLine();
-        while (true) {
-            String temp = scanner.nextLine();
-            if (temp.matches("^[a-z]+[0-9]*@[a-z]+\\.[a-z]+$")) {
-                linkedList.add(temp);
-                break;
-            } else {
-                System.out.println("Invalid email address ! Enter again");
-            }
-        }
+    public void addFirst(Person person) {
 
     }
+
+    public void addLast(Person person) {
+
+    }
+
+    public boolean isEmpty() {
+        return true;
+    }
+
+
+    public boolean exist(String firstName) {
+        return true;
+    }
+
+
+    public int indexOf(String firstName) {
+        return -1;
+    }
+
+
+    public void removeFirst() {
+
+    }
+
+    public void removeLast() {
+
+    }
+
+    private Node getPreviousNode(Node node) {
+        return null;
+    }
+
+    public void deleteNode(int position) {
+
+    }
+
+    public int size() {
+        return 0;
+    }
+
+    public void display() {
+
+    }
+
+    public void displayOne() {
+
+    }
+
+    public void getNode(int pos) {
+        var current = first;
+        int index = 0;
+        while (current != null) {
+            if (index == pos) {
+                System.out.println();
+                System.out.println("-----------------------*-------------------------");
+                System.out.println("Name:" + current.getValue().getFirstName() + " " + current.getValue().getLastName());
+                System.out.println("Contacts:" + current.getValue().getContacts().toString());
+                System.out.println("Email:" + current.getValue().getEmail());
+                System.out.println("------------------------*-------------------------");
+                System.out.println();
+                break;
+            }
+            index++;
+            current = current.getNext();
+        }
+
+
+    }
+
+
 }
 
