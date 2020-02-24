@@ -8,4 +8,6 @@ import java.util.Scanner;
 public class LinkedList1 {
 
     Scanner scanner = new Scanner(System.in);
+    LinkedList<String> linkedList = new LinkedList<>();
+
 }
