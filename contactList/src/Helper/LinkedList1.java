@@ -11,7 +11,13 @@ public class LinkedList1 {
 
     public void addFirst(Person person) {
         Node node = new Node(person);
-
+        if (isEmpty()) {
+            first = node;
+            last = node;
+        } else {
+            last.setNext(node);
+            last = node;
+        }
     }
 
     public void addLast(Person person) {
