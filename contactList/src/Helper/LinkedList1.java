@@ -32,6 +32,14 @@ public class LinkedList1 {
             }
             lastName = scanner.nextLine().trim();
         }
+        System.out.print("Contact Number:");
+        while (true) {
+            String contact = scanner.nextLine().trim();
+            if (contact.matches("[0-9]{10}")) {
+                linkedList.add(contact);
+                break;
+            }
+        }
 
 
     }
