@@ -22,6 +22,8 @@ public class LinkedList1 {
             }
             firstName = scanner.nextLine().trim();
         }
+        System.out.print("Last Name : ");
+        String lastName = scanner.nextLine().trim();
 
 
     }
