@@ -101,6 +101,9 @@ public class Tasks {
     }
 
     public void searchContact(LinkedList1 linkedList1) {
+        System.out.println("You could search for a contact from their first names: ");
+        String firstName = scanner.nextLine().trim();
+
 
     }
 
