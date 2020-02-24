@@ -21,6 +21,7 @@ public class LinkedList1 {
     }
 
     public void addLast(Person person) {
+        Node node = new Node(person);
 
     }
 
