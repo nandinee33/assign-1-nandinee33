@@ -94,7 +94,13 @@ public class LinkedList1 {
     }
 
     public int size() {
-        return 0;
+        var current = first;
+        int index = 1;
+        while (current.getNext() != null) {
+            current = current.getNext();
+            index++;
+        }
+        return index;
     }
 
     public void display() {
