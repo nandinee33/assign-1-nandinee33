@@ -17,5 +17,22 @@ public class Main {
         System.out.println("Press 4 to delete a contact");
         System.out.println("Press 5 to exit program ");
 
+        int choice = Integer.parseInt(scanner.nextLine());
+        if (choice == 1) {
+
+        }
+        if (choice == 2) {
+
+        }
+        if (choice == 3) {
+
+        }
+        if (choice == 4) {
+
+        }
+        if (choice == 5) {
+
+        }
+
     }
 }
