@@ -43,8 +43,20 @@ public class LinkedList1 {
         while (true) {
             System.out.print("Would you like to add another contact number? (y/n):");
             char choice = scanner.next().charAt(0);
-
-
+            if (choice == 'y') {
+                System.out.println("Conatct Number : ");
+                String contactNumber1 = scanner.nextLine().trim();
+                while (true) {
+                    if (contactNumber1.matches("[0-9]{10}")) {
+                        linkedList.add(contactNumber1);
+                        break;
+                    } else {
+                        System.out.println("Add correct number");
+                    }
+                }
+            } else {
+                break;
+            }
         }
     }
 }
