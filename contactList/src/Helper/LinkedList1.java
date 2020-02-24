@@ -1,7 +1,5 @@
 package Helper;
 
-import Person.Person;
-import Helper.LinkedList1;
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -11,6 +9,12 @@ public class LinkedList1 {
     LinkedList<String> linkedList = new LinkedList<>();
 
     public void addContact(LinkedList1 linkedList1){
+
+        System.out.println("You have chosen to add a new contact: \n" +
+                "Please enter the name of the Person");
+        System.out.print("First Name: ");
+        String firstName = scanner.nextLine().trim();
+
 
     }
 
