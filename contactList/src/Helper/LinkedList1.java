@@ -14,6 +14,14 @@ public class LinkedList1 {
                 "Please enter the name of the Person");
         System.out.print("First Name: ");
         String firstName = scanner.nextLine().trim();
+        while (true) {
+            if (firstName.matches("[A-Za-z]+")) {
+                break;
+            } else {
+                System.out.println("Please enter correct name");
+            }
+            firstName = scanner.nextLine().trim();
+        }
 
 
     }
